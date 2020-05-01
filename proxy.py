@@ -57,7 +57,6 @@ def http_proxy(clientSocket,client_address,data):
                 if (len(data)<=0):
                     clientSocket.close();
                     s.close();
-                    s.close();
                     break;
                 data=data.decode("utf-8");
                 data=data.replace("Proxy-Connection","Connection");   
